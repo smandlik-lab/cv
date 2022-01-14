@@ -3,6 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.body{
+font-family: sans-serif;
+}
+
 .col-container {  
     display: table;
     width: 90%;
@@ -11,15 +15,15 @@
     padding: 25px;
 }
 .col-first {
+  border: 1px solid black;
   display: table-cell;
   padding: 16px;
   background: #4169e1;
-  width: 30%;
+  width: 32%;
 }
 .col-first-section{
 }
 .col-first-section-1-heading-2{
-    color: white;
     font-family: sans-serif;
     font-weight: 700;
     font-size: xx-large;
@@ -29,49 +33,66 @@
     font-family: sans-serif;
     font-weight: 700;
     font-size: xx-large;
-    text-align: center;
+    text-align: left;
+}
+
+hr.new {
+ border: 1px dashed #bff518;
 }
 .p1{
     color: white;
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
-    font-family: sans-serif;
 }
 .p2{
     color: white;
     font-size: 15px;
     text-align: center;
-    font-family: sans-serif;
+}
+.p3{
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+.col-first-ul{
+    color: white;
+}
+.col-first-li{
+    height:25px;
 }
 .col-second {
+  border: 1px solid black;
   display: table-cell;
   padding: 16px;
   background: #f8f8ff;
-  width: 70%;
+  width: 68%;
 }
 
 </style>
 </head>
-<body>
+<body class="body">
     
 <div class="col-container">
   <div class="col-first">
     <div class="col-first-section">
         <h2 class="col-first-section-1-heading-2">Sagar Mandlik</h2>
         <p class="p1">Full Stack Developer</p>
-        <p class="p2">Angular | ASP.Net MVC | LINQ | REST API</p>
-        <p> E-mail: sagarmandlik18@gmail.com</p>
-        <p>Mobile No:+91 9766126278</p>
-        <p>Current Location: Pune</p>        
+        <p class="p2"><b>Angular | ASP.Net MVC | LINQ | REST API</b></p>
+		<hr class="new">
+		<div class="contact-details">
+			<p><b>E-mail:</b> sagarmandlik18@gmail.com</p>
+			<p><b>Mobile No:</b> +91 9766126278</p>
+			<p><b>Current Location:</b> Pune</p>
+		</div>        
         </br>
     </div>
     <hr>
     <div class="col-first-section">
         <h2 class="col-first-section-heading-2">Technology Stack</h2>
-        <p>HTML, CSS, JAVA Script, JQuery, ADA, Angular</p>
-        <p>C#, ASP.Net MVC 4.0, LINQ, Entity framework,SQL Server 2008, ASP.Net Core</p>
-        <p>AZURE – AZ-900 Azure Fundamental
+        <p class="p3">HTML, CSS, JAVA Script, JQuery, ADA, Angular</p>
+        <p class="p3">C#, ASP.Net MVC 4.0, LINQ, Entity framework,SQL Server 2008, ASP.Net Core</p>
+        <p class="p3"><b>AZURE</b> – AZ-900 Azure Fundamental
         Key Vault, Azure Function Service Bus,
         Storage.</p>
          </br>
@@ -79,38 +100,45 @@
     <hr>
     <div class="col-first-section">
         <h2 class="col-first-section-heading-2">Software/Tools</h2>
-        <ul>
-            <li> Visual Studio</li>
-            <li> TFS, SVN</li>
-            <li>GIT</li>
-            <li>Postman</li>
-            <li>Fiddler</li>
-            <li>SQL Server</li>
-            <li> Swaggger</li>
-            <li> Octopus</li>
-            <li> JIRA, VersionOne</li>
-            <li> JAWS WAVE AXE</li>
+        <ul class="col-first-ul">
+            <li class="col-first-li"> Visual Studio</li>
+            <li class="col-first-li"> TFS, SVN</li>
+            <li class="col-first-li">GIT</li>
+            <li class="col-first-li">Postman</li>
+            <li class="col-first-li">Fiddler</li>
+            <li class="col-first-li">SQL Server</li>
+            <li class="col-first-li"> Swaggger</li>
+            <li class="col-first-li"> Octopus</li>
+            <li class="col-first-li"> JIRA, VersionOne</li>
+            <li class="col-first-li"> JAWS WAVE AXE</li>
           </ul>
       </br>
     </div>
     <hr>
     <div class="col-first-section">
         <h2 class="col-first-section-heading-2">Technical Certification</h2>
-            <p> Udemy Certification
-            1. AZ-900 – Azure Fundamentals
-            2. The Complete 2020 Web Development
-            Bootcamp
-            A full-stack web developer with, HTML,
-            CSS, Javascript & Javascript-ES6, Node,
-            React, RESTful API, MongoDB, Git
-            Version Control and more!
-             Microsoft</p>
+            <p class="p3">Udemy Certification
+			<ul class="col-first-ul">
+				<li class="col-first-li">AZ-900 – Azure Fundamentals</li>
+				<li class="col-first-li">The Complete 2020 Web Development Bootcamp</li>
+				<p>A full-stack web developer with, HTML,
+				CSS, Javascript & Javascript-ES6, Node,
+				React, RESTful API, MongoDB, Git
+				Version Control and more!</P>
+			</ul></p>
+           <p class="p3">Microsoft
+		   <ul class="col-first-ul">
+				<li>Web Applications Development with.NET Framework 4</li>
+				<li>Microsoft .Net Framework – Application Development Foundation</li>
+			</ul>
+			</p>
     </div>
     <hr>
   </div>
 
   <div class="col-second">
     <h2 class="col-first-section-heading-2">Summary</h2>
+	<ul>
     <li> Self-motivated Front-End Developer with 10+ years of experience in designing,developing, and managing complex financial Institution web applications in
         finance domain with insightful knowledge of SDLC by following agilemethodologies that drive business growth.</li></br>
     <li>Worked on multiple design patterns like Factory, Abstract Factory,Dependency injection etc.</li></br>
@@ -129,7 +157,8 @@
     <li> Have good understanding of cross browser compatibility and used online tools like Browser Stack to debug and fix browser specific issues.</li></br>
     <li>Strong understanding of website vulnerabilities like Cross-site scripting (XSS) attacks, SQL injection and its prevention techniques.</li></br>
     <li>Performed code reviews using TFS Tool to ensure proper coding techniques, standards, and approaches as well as adherence to standards being followed.</li></br>
-    <li>Experience of working under pressure and managing short/stiff deadlines.</li></br>    
+    <li>Experience of working under pressure and managing short/stiff deadlines.</li></br>
+	</ul>
 
   </div>
 </div>
