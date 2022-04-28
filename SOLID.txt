@@ -1,0 +1,50 @@
+SOLID => 
+
+Need to Explain in SIOLD sequence
+
+SRP - "A class should have only 1 reason to chagne" 
+        EX.
+        User- Register | Login | Logging (Info, Error etc.) | Send Email Notification
+
+ISP - 1. "Class should not be forced to implement any method they don't use"
+      2. "Instead of creating fat Interface, create multiple smaller interface"
+      EX.
+      1. HPLaserJetPrinter -> Scan,Print,FAX,PrintDuplex
+      2. LiquidInkJetPrinter -> Scan, Print
+
+OCP  (Most Important Principle)- 
+    "A software entities such as modules, classes, functions, etc. should be open for extention,"
+      "but closed for modification"
+      Implementation Guideline 
+        1. "Simplest way to apply OCP is to implement the new functionality on new derived classes."
+        2. "Allow clients to access the original class with absctract interface."
+
+        EX.
+        Employee -> 
+        1. PermanentEmployee - Salary Calculation with Bonus
+        2. TemparoryEmployee - Salary Calculation with bonus 
+
+    // using abstract calss OCP can be achieve
+        
+LSP "Derived types must be completely substitutable for their base types"
+"New requirment like"
+
+"Extentsion of the" Open Close Principle
+
+        Implementation Guideline 
+        1. "No new exception can be thrown by the subtype"
+        2. 
+        
+        EX.
+        1. PermanentEmployee
+        2. TemparoryEmployee
+        3. ContractEmployee        
+
+DIP - Dependency Inversion Principle.
+
+        1. "High-level modules/classes should not depend on low-level modules/classes."
+         "Both should be depends on abstraction"
+        2. "Abstraction should not depend on details,
+                'Details shuld be depend on Abstraction".
+        EX. - Repository implementation
+        1. Adapter Design Pattern.
