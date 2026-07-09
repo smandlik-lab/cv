@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sagar Mandlik — Resume</title>
+<style>
+:root{
+  --blue-primary:#458ED7;
+  --blue-dark:#2362A1;
+  --blue-line:#2471A3;
+  --blue-heading:#1A5276;
+  --navy:#0D1B2A;
+  --charcoal:#1C2833;
+  --gray-dash:#BDC3C7;
+  --muted-blue:#3A6E9A;
+  --org-bg:#DCEAF7;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  padding:0;
+  background:#e9e9e9;
+  font-family:Calibri,'Segoe UI',Arial,sans-serif;
+}
+.page{
+  max-width:960px;
+  margin:0 auto;
+  background:#fff;
+  padding-right:2.5%;
+}
+.header-band{
+  background:var(--blue-primary);
+  color:#fff;
+  padding:26px 32px 16px 32px;
+}
+.header-band h1{
+  margin:0;
+  font-size:28pt;
+  font-weight:700;
+  line-height:1.1;
+}
+.header-band .subtitle{
+  margin:8px 0 0;
+  font-size:13pt;
+}
+.header-band .subtitle .sep{
+  color:var(--muted-blue);
+  margin:0 6px;
+}
+.header-band .subtitle .techline{
+  font-size:12pt;
+}
+.contact-band{
+  background:var(--blue-dark);
+  color:#fff;
+  font-size:11pt;
+  padding:10px 32px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 28px;
+}
+.body-columns{
+  display:flex;
+  align-items:stretch;
+}
+.sidebar{
+  background:var(--blue-primary);
+  color:#fff;
+  width:26.5%;
+  flex:0 0 26.5%;
+  padding:18px 20px 36px 28px;
+}
+.content{
+  background:#fff;
+  color:var(--charcoal);
+  width:73.5%;
+  flex:0 0 73.5%;
+  padding:18px 26px 30px 20px;
+}
+.sidebar h2{
+  font-size:11pt;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing:.2px;
+  border-bottom:1px solid var(--blue-line);
+  padding-bottom:5px;
+  margin:20px 0 8px;
+}
+.sidebar h2:first-child{margin-top:0;}
+.sidebar p{
+  font-size:11pt;
+  line-height:1.45;
+  margin:4px 0;
+}
+.sidebar ul{
+  list-style:none;
+  margin:4px 0 0;
+  padding:0;
+}
+.sidebar li{
+  font-size:11pt;
+  line-height:1.5;
+  margin:3px 0;
+  padding-left:14px;
+  position:relative;
+}
+.sidebar li::before{
+  content:"▪";
+  position:absolute;
+  left:0;
+  font-size:9pt;
+}
+.sidebar .edu-block{margin:6px 0 12px;}
+.sidebar .edu-degree{font-weight:700; margin:0;}
+.sidebar .edu-meta{margin:2px 0;}
+
+.content h2.section-heading{
+  font-size:12pt;
+  font-weight:700;
+  color:#000;
+  text-transform:uppercase;
+  border-bottom:1.5px solid var(--blue-line);
+  padding-bottom:5px;
+  margin:20px 0 10px;
+}
+.content h2.section-heading:first-child{margin-top:0;}
+.summary{
+  font-size:11.5pt;
+  line-height:1.5;
+  margin:0 0 6px;
+}
+.org-box{
+  background:var(--org-bg);
+  padding:10px 16px;
+  margin:16px 0 12px;
+}
+.org-box .company{
+  font-size:12pt;
+  color:var(--navy);
+  margin:0 0 2px;
+}
+.org-box .role-line{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  font-size:12pt;
+  color:var(--navy);
+}
+.project-title{
+  font-size:12pt;
+  font-weight:700;
+  color:var(--blue-heading);
+  margin:14px 0 2px;
+}
+.project-title .dash{
+  color:var(--gray-dash);
+  font-weight:400;
+  margin-left:8px;
+}
+.tech-line{
+  font-size:11.5pt;
+  color:var(--charcoal);
+  margin:0 0 8px;
+}
+.content ul{
+  margin:6px 0 10px;
+  padding-left:20px;
+}
+.content li{
+  font-size:11.5pt;
+  line-height:1.5;
+  margin:4px 0;
+  color:var(--charcoal);
+}
+.safe-note{
+  font-size:11.5pt;
+  line-height:1.5;
+  margin:10px 0 6px;
+}
+.safe-note b{color:var(--navy);}
+.key-projects-heading{
+  font-size:11.5pt;
+  font-weight:700;
+  color:var(--navy);
+  margin:16px 0 4px;
+}
+.content li b{color:var(--charcoal);}
+@media (max-width:700px){
+  .body-columns{flex-direction:column;}
+  .sidebar,.content{width:100%; flex:0 0 100%;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header-band">
+    <h1>Sagar Mandlik</h1>
+    <p class="subtitle">Senior Full Stack Developer<span class="sep">|</span><span class="techline">React&nbsp;&nbsp;•&nbsp;&nbsp;.NET Core&nbsp;&nbsp;•&nbsp;&nbsp;AWS&nbsp;&nbsp;•&nbsp;&nbsp;Microservices&nbsp;&nbsp;•&nbsp;&nbsp;AI Enthusiast</span></p>
+  </div>
+
+  <div class="contact-band">
+    <span>📧 sagarmandlik18@gmail.com</span>
+    <span>📱 +91 97661 26278</span>
+    <span>📌 Pune, Maharashtra</span>
+    <span>🔗 linkedin.com/in/sagar-mandlik-61a5b927</span>
+  </div>
+
+  <div class="body-columns">
+    <aside class="sidebar">
+
+      <h2>Expertise</h2>
+      <p><b>14+ Years Full Stack</b></p>
+      <p>Finance &amp; SaaS Platforms</p>
+      <p>Cloud-Native Architecture</p>
+      <p>Team Lead &amp; Scrum Master</p>
+
+      <h2>Technical Skills</h2>
+      <p><b>AI</b></p>
+      <p>Claude API integration, Prompt engineering, Model Context Protocol (MCP), Agentic workflows / tool use, Claude Code, Agent skills &amp; subagents authoring, Responsible AI practices</p>
+      <p><b>Front-End</b></p>
+      <p>React, TypeScript, HTML5, CSS3, jQuery, Bootstrap, Angular</p>
+      <p><b>Back-End</b></p>
+      <p>.NET Core, C#, ASP.NET MVC, Web API, LINQ Entity Framework</p>
+      <p><b>Cloud / AWS</b></p>
+      <p>SES, Lambda, S3, SQS, SNS, EKS, RDS, Dynamodb, Cloud Watch, Azure Key Vault</p>
+      <p><b>DevOps</b></p>
+      <p>Kubernetes, ArgoCD, Jenkins, Octopus, Git, TFS, SVN</p>
+      <p><b>Database</b></p>
+      <p>SQL Server, MySQL, MongoDB</p>
+      <p><b>Testing/QA</b></p>
+      <p>NUnit, Playwright, Postman, JAWS, WAVE, AXE Fiddler, BrowserStack</p>
+
+      <h2>Org. Events</h2>
+      <ul>
+        <li>Ideathon</li>
+        <li>Sparkathon</li>
+        <li>Product Carnival</li>
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>MCTS — .NET 4 (Microsoft)</li>
+        <li>MS .NET Application Dev Foundation</li>
+        <li>AZ-900 Azure Fundamentals</li>
+        <li>SAFe Agile Team Member (2015 – Present)</li>
+        <li>Full Stack Bootcamp React, Node, MongoDB (Udemy 2020)</li>
+        <li>Anthropic Claude</li>
+      </ul>
+
+      <h2>Education</h2>
+      <div class="edu-block">
+        <p class="edu-degree">MCA — Master of Computer Applications</p>
+        <p class="edu-meta">SPPU, Pune&nbsp;&nbsp;•&nbsp;&nbsp;2007–2010</p>
+        <p class="edu-meta">First Class</p>
+      </div>
+      <div class="edu-block">
+        <p class="edu-degree">B.Sc. — Bachelor of Science</p>
+        <p class="edu-meta">SPPU, Pune&nbsp;&nbsp;•&nbsp;&nbsp;2004–2007</p>
+        <p class="edu-meta">First Class</p>
+      </div>
+
+      <h2>Awards</h2>
+      <ul>
+        <li>Shining Star — Q4 2017</li>
+        <li>Employee of Month July 2011</li>
+        <li>Employee of Month April 2012</li>
+        <li>"Living Proof" client recognitions — EPG</li>
+      </ul>
+
+      <h2>Languages</h2>
+      <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Marathi</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>sagarmandlik18@gmail.com</p>
+      <p>+91 97661 26278</p>
+      <p>Pune, Maharashtra</p>
+
+    </aside>
+
+    <main class="content">
+
+      <h2 class="section-heading">Professional Summary</h2>
+      <p class="summary">Results-driven Full Stack Developer with 14+ years of progressive experience in managing enterprise-grade web applications for financial institutions and cloud contact-center platforms. Deep expertise spanning UI/front-end (HTML, React), back-end microservices (.NET Core, C#), cloud infrastructure (AWS, Azure), and mainframe integration — consistently delivering scalable, secure, ADA-compliant solutions across the full SDLC in Agile/SAFe environments. Adept at client engagement, technical mentorship, cross-team collaboration, and driving on-time delivery under tight deadlines.</p>
+
+      <h2 class="section-heading">Work Experience</h2>
+
+      <div class="org-box">
+        <p class="company">NiCE Interactive System - Pune</p>
+        <div class="role-line"><span>Specialist Software Engineer</span><span>May 2022 – Till Present</span></div>
+      </div>
+
+      <p class="project-title">Digital Experience Email (DXE) Platform<span class="dash">—</span></p>
+      <p class="tech-line">C# .NET Core&nbsp;&nbsp;|&nbsp;&nbsp;AWS (SES, Lambda, EKS, S3, SQS, SNS)&nbsp;&nbsp;|&nbsp;&nbsp;Kubernetes&nbsp;&nbsp;|&nbsp;&nbsp;Grafana</p>
+      <ul>
+        <li>Designed and maintained C#/.NET microservices &amp; AWS Lambdas across ~70 repositories — covering inbound routing, outbound delivery, MIME construction, OAuth-based SMTP (MS Graph API), and SES bounce/complaint processing. System processes ~100K emails/hour across 10 AWS regions.</li>
+        <li>Built and enhanced full <b>inbound</b> pipeline (SES → S3 → SNS → SQS → ingress → routing → skills-lambda → VC/DFO) and <b>outbound</b> pipeline (VC/DFO → outbound-api → SQS → egress → send-email-api → SES) ensuring 1M emails/day throughput target.</li>
+        <li>Led 2 migration workstreams: FileServer → Cloud Storage, CloudWatch → Grafana LGTM observability — reducing operational overhead ~30%.</li>
+        <li>Performed production incident triage, RCA; authored runbooks, alert playbooks, Grafana dashboards (structured event IDs, CloudWatch panels) — improving MTTR.</li>
+        <li>Collaborated with Platform (VC monolith), DFO (Digital Prague), and DevOps teams across geographies on cross-system integrations.</li>
+        <li>Enforced secure-by-default: SSM-managed secrets, GDPR-compliant email retention/deletion, zero hardcoded credentials.</li>
+        <li>Built the <b>inbound/outbound email blacklist</b> feature — UI for blacklist domain management, role-based access control, and integration with the management-api to block unwanted senders/recipients globally.</li>
+        <li>Designed and delivered the Reply-to address configuration capability end-to-end — new "Edit Channel" UI in integration box, full CRUD endpoints in channels-email-management-api, RDS schema changes, and inbound logic that resolves the reply-to address from MyGlobal DB and rewrites the Reply-To header during inbound processing.</li>
+      </ul>
+
+      <p class="project-title">Customer Chat Platform (CXone)<span class="dash">—</span></p>
+      <p class="tech-line">React&nbsp;&nbsp;|&nbsp;&nbsp;JavaScript&nbsp;&nbsp;|&nbsp;&nbsp;C# .Net&nbsp;&nbsp;|&nbsp;&nbsp;SSMS&nbsp;&nbsp;|&nbsp;&nbsp;CXone Studio</p>
+      <ul>
+        <li>Delivered Basic Chat integration for CXone (Central &amp; User Hub) with customizable widget, pre-chat form, queue management, and transcript download/email — both V1 (popup) and V2 (embedded).</li>
+        <li>Implemented SSL/TLS encryption and JavaScript API for dynamic chat customization; enabled third-party integrations via CXone Studio scripts.</li>
+        <li>Fixed HTML injection vulnerabilities in Patron Chat transcript PDF and chat-transcript email exports.</li>
+        <li>Created and stabilized the DO-34 development cluster and deployed all CXone components onto it.</li>
+      </ul>
+      <p class="safe-note"><b>SAFe Agile Practice:</b> Regularly led daily stand-ups, sprint planning, and backlog grooming within the Scaled Agile Framework. Served as Scrum Master driving team velocity improvements.</p>
+
+      <div class="org-box">
+        <p class="company">Fiserv India Pvt. Ltd., Pune</p>
+        <div class="role-line"><span>Tech Analyst&nbsp;&nbsp;→&nbsp;Tech Lead</span><span>Nov 2013 – April 2022</span></div>
+      </div>
+
+      <p class="project-title">Bill Pay RXP — Electronic Billing &amp; Payment Platform<span class="dash">—</span></p>
+      <p class="tech-line">HTML, Razor View&nbsp;&nbsp;|&nbsp;&nbsp;ASP.NET MVC&nbsp;&nbsp;|&nbsp;&nbsp;C#&nbsp;&nbsp;|&nbsp;&nbsp;REST API&nbsp;&nbsp;|&nbsp;&nbsp;jQuery</p>
+      <ul>
+        <li>Led end-to-end front-end development for next-gen Bill Pay (RXP) platform serving 1M+ internet banking subscribers — enabling online bill payments to managed/unmanaged merchants, social token payments (email/mobile), recurring schedules, and auto e-Bill payments.</li>
+        <li>Drove ADA/WCAG 2.1 compliance using JAWS, WAVE, AXE — resolved 100% of critical accessibility violations; also conducted Visual Studio Code Analysis and performance tuning via Fiddler, HttpFox, and browser DevTools.</li>
+        <li>Directly engaged with banking clients to resolve integration issues; distinguished technical vs. functional problems, reducing escalation turnaround time.</li>
+        <li>Enforced OWASP secure coding standards via TFS code reviews — eliminated XSS and SQL injection vulnerabilities; applied Factory, Abstract Factory, and Dependency Injection design patterns.</li>
+        <li>Conducted department-level technical training sessions; mentored junior developers on coding/owasp best practices, Agile delivery, and code quality standards.</li>
+      </ul>
+
+      <p class="key-projects-heading">Key Projects (condensed — oldest org):</p>
+      <ul>
+        <li><b>Factor Freight Solutions:</b> Built web-based freight invoice validation system (ASP.NET MVC) replacing Excel-based tools; implemented configurable rules engine for multi-client invoice accuracy and scalability.</li>
+        <li><b>groMoney (US Stock Market App):</b> Developed portfolio tracking features with Facebook OAuth, S&amp;P/Dow Jones benchmarking, group investment tools, and dynamic jqPlot bar/pie chart visualizations.</li>
+        <li><b>Anzu Medical (e-Commerce):</b> Built iPad-based e-book purchasing platform with breadcrumb navigation, advanced search by category, subscription model, and cart/payment workflow.</li>
+      </ul>
+
+      <div class="org-box">
+        <p class="company">Thinkinghut IT Solutions, Pune</p>
+        <div class="role-line"><span>Software Engineer</span><span>April 2011 – Nov 2013</span></div>
+      </div>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>
